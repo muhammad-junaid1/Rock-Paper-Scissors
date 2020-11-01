@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Local Styles -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Philosopher", sans-serif;
+        background-color: #e5e5e5;
+      }
+      .game-container {
+        height: 100vh;
+      }
+      .display-3 {
+        font-family: "Istok Web", sans-serif;
+      }
+
+      #player-score,
+      #computer-score {
+        color: #00b3b3;
+      }
+    </style>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div
+      class="game-container d-flex justify-content-center align-items-center flex-column"
+    >
+      <h1 class="display-3 mb-3 font-weight-bold">Rock - Paper - Scissors</h1>
+      <!-- Result Div -->
+
+      <div class="d-flex justify-content-center">
+        <h3 class="mr-4">
+          Player : <span id="player-score" class="font-weight-bold">0</span>
+        </h3>
+        <h3>
+          Computer : <span id="computer-score" class="font-weight-bold">0</span>
+        </h3>
+      </div>
+
+      <p id="message" class="lead font-weight-bold"></p>
+
+      <!-- Buttons for Player Selections -->
+      <div class="btn-group btn-group-toggle">
+        <button type="button" class="btn btn-outline-dark rounded-0">
+          Rock
+        </button>
+        <button type="button" class="btn btn-outline-danger rounded-0">
+          Paper
+        </button>
+        <button type="button" class="btn btn-outline-success rounded-0">
+          Scissors
+        </button>
+      </div>
+      <p class="mt-2 comp-selection"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
